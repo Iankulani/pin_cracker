@@ -5,6 +5,12 @@ Created on Wed Oct  2 13:54:47 2024
 @author: IAN CARTER KULANI
 """
 
+from colorama import Fore
+import pyfiglet
+import os
+font=pyfiglet.figlet_format("PIN CRACKER")
+print(Fore.GREEN+font)
+
 # Generate all 4-digit PINs and save them to pin.txt
 with open('pin.txt', 'w') as file:
     for pin in range(1000000):
